@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive JavaScript Project</h1>
+        <p>Event Handling, Interactive Elements, and Form Validation</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#event-section">Event Handling</a></li>
+            <li><a href="#interactive-section">Interactive Elements</a></li>
+            <li><a href="#form-section">Form Validation</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Part 1: Event Handling -->
+        <section id="event-section">
+            <h2>Event Handling Examples</h2>
+            
+            <div class="event-examples">
+                <div class="event-box" id="click-box">
+                    <h3>Click Event</h3>
+                    <p>Click this box to change its color</p>
+                </div>
+                
+                <div class="event-box" id="mouseover-box">
+                    <h3>Mouseover Event</h3>
+                    <p>Hover over this box to see an effect</p>
+                </div>
+                
+                <div class="event-box">
+                    <h3>Keyboard Event</h3>
+                    <p>Press any key to change the background color</p>
+                    <input type="text" id="key-input" placeholder="Click here and type something">
+                </div>
+                
+                <div class="event-box" id="doubleclick-box">
+                    <h3>Double-Click Event</h3>
+                    <p>Double-click this box to toggle its size</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 2: Interactive Elements -->
+        <section id="interactive-section">
+            <h2>Interactive Elements</h2>
+            
+            <div class="interactive-container">
+                <!-- Dark/Light Mode Toggle -->
+                <div class="interactive-element">
+                    <h3>Dark/Light Mode Toggle</h3>
+                    <button id="theme-toggle">Toggle Dark Mode</button>
+                    <p>Current mode: <span id="mode-indicator">Light</span></p>
+                </div>
+                
+                <!-- Counter Game -->
+                <div class="interactive-element">
+                    <h3>Counter Game</h3>
+                    <div class="counter-display">
+                        <span id="counter-value">0</span>
+                    </div>
+                    <div class="counter-controls">
+                        <button id="decrement-btn">-</button>
+                        <button id="reset-btn">Reset</button>
+                        <button id="increment-btn">+</button>
+                    </div>
+                </div>
+                
+                <!-- Collapsible FAQ Section -->
+                <div class="interactive-element">
+                    <h3>FAQ Section</h3>
+                    <div class="faq-item">
+                        <div class="faq-question">What is JavaScript? <span class="toggle-icon">+</span></div>
+                        <div class="faq-answer">
+                            <p>JavaScript is a programming language that enables interactive web pages. It is an essential part of web applications.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What are event listeners? <span class="toggle-icon">+</span></div>
+                        <div class="faq-answer">
+                            <p>Event listeners are functions that wait for a specific event to occur on a particular element, then execute code in response.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What is DOM manipulation? <span class="toggle-icon">+</span></div>
+                        <div class="faq-answer">
+                            <p>DOM manipulation refers to using JavaScript to modify the content, structure, or style of a web page dynamically.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tabbed Interface -->
+                <div class="interactive-element">
+                    <h3>Tabbed Interface</h3>
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                        <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                        <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab1" class="tab-pane active">
+                            <h4>First Tab Content</h4>
+                            <p>This is the content for the first tab. JavaScript makes it interactive!</p>
+                        </div>
+                        <div id="tab2" class="tab-pane">
+                            <h4>Second Tab Content</h4>
+                            <p>This is the content for the second tab. Tabs help organize information.</p>
+                        </div>
+                        <div id="tab3" class="tab-pane">
+                            <h4>Third Tab Content</h4>
+                            <p>This is the content for the third tab. You can put anything here!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Form Validation -->
+        <section id="form-section">
+            <h2>Form Validation</h2>
+            
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password">
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+                    <span class="error-message" id="confirm-password-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age">
+                    <span class="error-message" id="age-error"></span>
+                </div>
+                
+                <button type="submit" id="submit-btn">Submit Form</button>
+            </form>
+            
+            <div id="form-message" class="hidden">
+                <h3>Form Submitted Successfully!</h3>
+                <p>Your information has been validated and processed.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Interactive JavaScript &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
